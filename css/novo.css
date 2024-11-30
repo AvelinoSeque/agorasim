@@ -1,0 +1,68 @@
+.animacao{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+.slide {
+    width: 500%;
+    height: 400px;
+    display: flex;
+}
+.imagens{
+    width: 20%;
+    transition: 1s;
+
+}
+.imagens img{
+    width: 100%;
+    height: 800px;
+}
+.todo_radio{
+    display:  none;
+}
+
+.redondo{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 0 10px;
+}
+.botoes{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    margin-top: -30px;
+    opacity: 0.3;
+    z-index: 3;
+}
+#ra1:checked ~ .img1{
+    margin-left: 0;
+}
+#ra2:checked ~ .img1{
+    margin-left: -20%;
+}
+#ra3:checked ~ .img1{
+    margin-left: -40%;
+}
+#ra4:checked ~ .img1{
+    margin-left: -60%;
+}
+#ra5:checked ~ .img1{
+    margin-left: -80%;
+}
+.fundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.fundo h1{
+    color: white;
+}
